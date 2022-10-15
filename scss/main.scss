@@ -1,0 +1,228 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+}
+
+@mixin font-change($fsize, $Lheight) {
+  font-size: $fsize;
+  line-height: $Lheight;
+}
+p {
+  @include font-change(14px, 19.1px);
+}
+h6 {
+  font-family: "Roboto";
+  font-weight: bolder;
+  @include font-change(24px, 21px);
+}
+nav {
+  span {
+    font-size: larger;
+    font-weight: 600;
+    @include font-change(16px, 22px);
+  }
+  .nav-link {
+    font-family: "Mulish";
+    font-size: 13.33px;
+    color: black !important;
+  }
+  .navbar-brand {
+    line-height: 22px;
+  }
+}
+.image img {
+  height: 607.91px;
+}
+
+// card section
+.card-section {
+  margin-top: 72px;
+
+  .col-lg-3 {
+    flex: 0 0 23%;
+  }
+  &-title {
+    margin-left: 3.2%;
+  }
+
+  .card {
+    margin-top: 25.33px;
+    height: 219px !important;
+    box-shadow: 4px 8px 24px rgba(204, 204, 204, 0.5) !important;
+  }
+
+  i {
+    font-size: 20.05px;
+    color: #1a87e6;
+    background-color: #1a87e629;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25.33px;
+    margin-bottom: 25.33px;
+    padding: 21px;
+    border-radius: 50%;
+  }
+  .card-text {
+    margin-top: -10%;
+  }
+  .padding-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+//card-section ends
+//central section starts
+
+.central-section {
+  margin-left: 8%;
+  .text-col {
+    display: block;
+    padding-left: 10%;
+  }
+
+  &-desc {
+    font-family: "Roboto";
+    font-weight: 400;
+    @include font-change(14px, 21px);
+    padding-right: 13%;
+  }
+
+  img {
+    height: 305px;
+    width: 94%;
+  }
+}
+//gallery section
+.gallery-section {
+  .titles {
+    position: relative;
+    display: flex;
+    p {
+      position: absolute;
+      right: 4.5%;
+    }
+  }
+  &-title {
+    margin-left: 3.5%;
+  }
+  img {
+    width: 275px;
+    height: 170px;
+  }
+  .col-lg-3 {
+    flex: 0 0 24%;
+    margin-bottom: 16px;
+  }
+}
+
+.grid-section {
+  margin-bottom: 585px;
+  &-title {
+    margin-left: 3%;
+  }
+  .intro,
+  .person-info,
+  .date-time {
+    border: 1px solid #2159ab;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 16px;
+    height: 171px;
+    background-color: #ffffff;
+  }
+  .intro {
+    &-img img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+    }
+    &-name {
+      color: black;
+      font-weight: 400;
+      @include font-change(14px, 100%);
+    }
+  }
+
+  .person-info {
+    display: grid;
+
+    &-title {
+      @include font-change(16px, 18.75px);
+      margin-bottom: 16px;
+      color: black;
+    }
+    &-description {
+      color: #666666;
+    }
+    &-date {
+      text-align: end;
+      color: #666666;
+      margin-top: -3%;
+      @include font-change(12px, 14px);
+    }
+  }
+  .date-time {
+    display: grid;
+    position: relative;
+    @include font-change(12px, 14px);
+    color: #666666;
+    .date {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    .time {
+      position: absolute;
+      bottom: 20px;
+      right: 16px;
+    }
+  }
+}
+
+//footer section
+
+footer {
+  margin-top: 585px;
+  background-color: #1a87e629;
+  a {
+    color: black;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 200px) {
+  .container-fluid {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .central-section {
+    padding: 10%;
+    img {
+      width: 100%;
+    }
+    .text-col {
+      padding-left: 0;
+    }
+    &-desc {
+      padding-right: 0;
+    }
+  }
+  .gallery-section {
+    margin-left: -4%;
+    .titles {
+      display: block;
+      p {
+        position: relative;
+        left: 1.5%;
+      }
+    }
+  }
+  .grid-section {
+    &-title {
+      margin-left: auto;
+    }
+  }
+}
