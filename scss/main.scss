@@ -15,6 +15,7 @@ h6 {
   font-weight: bolder;
   @include font-change(24px, 21px);
 }
+//navigaton bar section starts
 nav {
   span {
     font-size: larger;
@@ -33,8 +34,8 @@ nav {
 .image img {
   height: 607.91px;
 }
-
-// card section
+//navbar section ends
+// card section starts
 .card-section {
   margin-top: 72px;
 
@@ -100,7 +101,9 @@ nav {
     width: 94%;
   }
 }
-//gallery section
+//central section ends
+
+//gallery section starts
 .gallery-section {
   .titles {
     position: relative;
@@ -127,7 +130,8 @@ nav {
     }
   }
 }
-
+//gallery section ends
+//grids section starts
 .grid-section {
   margin-bottom: 585px;
   &-title {
@@ -192,8 +196,8 @@ nav {
     }
   }
 }
-
-//footer section
+//grids section ends 
+//footer section starts
 
 footer {
   margin-top: 585px;
@@ -202,7 +206,9 @@ footer {
     color: black;
   }
 }
+//footer section ends
 
+//media section
 @media screen and (max-width: 992px) and (min-width: 200px) {
   .container-fluid {
     justify-content: center;
